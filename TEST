@@ -1,0 +1,92 @@
+#Lazarus Burrell
+
+class Character:
+    def __init__(self, name, id_number):
+        self.__name = name
+        self.__id_number = id_number
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_id_number(self, id_number):
+        self.__id_number = id_number
+
+    def get_name(self):
+        return self.__name
+
+    def get_id_number(self):
+        return self.__id_number
+#define hero
+class Hero(Character):
+    def __init__(self, name, id_number, level, loot):
+        Character.__init__(self, name, id_number)
+
+        self.__level = level
+        self.__loot = loot
+
+#Adding mutators to level and loot
+    def set_level(self, level):
+        self.__level = level
+
+    def set_loot(self, __loot):
+        return self.__loot
+#moar functions
+    def get_level(self):
+        return self.__level
+
+    def get_loot(self):
+        return self.__loot
+
+#define boss
+class Hero(Character):
+    def __init__(self, name, id_number, level, hp, attack_damage):
+        Character.__init__(self, name, id_number)
+        self.__level = 2
+        self.__hp = 5500.0
+        self.__attack_damage = 99.0
+        self.__lifespan = 18.33
+    #I think i did that last part right????
+#Adding mutators to boss values
+    def set_level(self, level):
+        self.__level = level
+
+    def set_hp(self, hp):
+        return self.__hp == hp
+    
+    def set_attack_damage(self, attack_damage):
+        self.__attack_damage = attack_damage
+
+    def set_lifespan(self, lifespan):
+        self.__lifespan = lifespan
+#moar boss functions
+    def get_level(self):
+        return self.__level
+
+    def get_hp(self):
+        return self.__hp
+
+    def get_attack_damage(self):
+        return self.__attack_damage
+
+    def get_lifespan(self):
+        return (self.__hp / 300)
+    
+    # Print information about the Hero
+    print("Hero Information:")
+    print("Name:", Hero.get_name())
+    print("ID Number:", Hero.get_id_number())
+    print("Level:", Hero.get_level())
+    print("Loot:", Hero.get_loot())
+    print()
+
+    # Print information about the Boss
+    print("Boss Information:")
+    print("Name:", boss.get_name())
+    print("ID Number:", boss.get_id_number())
+    print("Level:", boss.get_level())
+    print("HP:", boss.get_hp())
+    print("Attack Damage:", boss.get_attack_damage())
+    print("Lifespan:", boss.get_lifespan())
+
+
+    #to be honest I have no idea what i'm doing
